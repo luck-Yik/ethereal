@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>点我试试</button>
+  <script>
+    var btn = document.querySelector('button')
+    var timer = null
+    btn.onclick = function () {
+      clearTimeout(timer)
+      timer = setTimeout(function () {
+        console.log('发起请求了...')
+      }, 300)
+    }
+  // 快速点击按钮, 无论多快, 只要点了一次, 日志就打印一次
+  // 在快速点击的过程中, 如何只让最后一次能产生效果
+  </script>
+</body>
+
+</html>
